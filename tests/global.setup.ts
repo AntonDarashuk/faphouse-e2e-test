@@ -5,6 +5,6 @@ setup(
   async ({ homePage, page }) => {
     await homePage.openViaUrl();
     await homePage.ageAndCookiesConsent.accept();
-    await page.context().storageState({ path: "../storage.json" });
+    await page.context().storageState({ path: "storage.json" });
   }
 );
