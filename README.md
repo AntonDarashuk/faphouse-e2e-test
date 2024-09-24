@@ -1,9 +1,21 @@
-to run tests:
+## Faphouse Playwrite tests
 
-npx playwright test
+#### ! important remark
 
-to run tests in debug mode:
+Probably based on IP or on something else the home page sometimes is **displaying** section **'Hot videos for you' and not showing 'Best Videos' ** on the home page. That is happening for execution with git actions and sometimes is happening for me locally.
 
-npx playwright install
+### Where to see reports
 
-npx playwright test --ui
+You can see test report on the git page https://vitalygryaznov.github.io/faphouse-e2e-test/
+
+### How to run locally
+
+- copy everything from '.env-blueprint' in the root of the project to '.env' to setup environment variables
+- install
+  $: npm install
+  $: npx playwright install
+
+- run
+  $: npx playwright test
+- or run in debug mode with
+  $: npx playwright test --ui
